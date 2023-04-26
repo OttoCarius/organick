@@ -1,8 +1,9 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Header from "../header/Header";
-// import Footer from "../footer/Footer";
+import Footer from "../footer/Footer";
 import { Container } from "./Layout.styled";
+import PreFooter from "../preFooter/PreFooter";
 
 const Layout = () => {
   return (
@@ -13,9 +14,10 @@ const Layout = () => {
       <div>
         <Outlet />
       </div>
-      {/* <Container>
+      <Container>
+        <PreFooter />
         <Footer />
-      </Container> */}
+      </Container>
     </>
   );
 };

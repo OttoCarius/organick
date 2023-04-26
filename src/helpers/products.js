@@ -53,19 +53,20 @@ const products = [
     quality: stars,
   },
   {
-    id: 3,
-    kind: "Vegetable",
-    title: "Mung Bean",
-    img: img14,
-    oldPrice: "$20.00",
-    newPrice: "$11.00",
+    id: 25,
+    kind: "Nuts",
+    title: "White Hazelnut",
+    img: img32,
+    oldPrice: "$10.00",
+    newPrice: "$8.00",
     quality: stars,
   },
+
   {
-    id: 4,
-    kind: "Vegetable",
-    title: "Cauliflower",
-    img: img12,
+    id: 3,
+    kind: "Groats",
+    title: "Mung Bean",
+    img: img14,
     oldPrice: "$20.00",
     newPrice: "$11.00",
     quality: stars,
@@ -81,6 +82,16 @@ const products = [
     quality: stars,
   },
   {
+    id: 20,
+    kind: "Fruits",
+    title: "Green Apple",
+    img: img19,
+    oldPrice: "$10.00",
+    newPrice: "$8.00",
+    quality: stars,
+  },
+
+  {
     id: 6,
     kind: "Vegetable",
     title: "Cabbage",
@@ -90,12 +101,12 @@ const products = [
     quality: stars,
   },
   {
-    id: 7,
-    kind: "Vegetable",
-    title: "Eggplant",
-    img: img5,
+    id: 18,
+    kind: "Fruits",
+    title: "Banana",
+    img: img6,
     oldPrice: "$20.00",
-    newPrice: "$18.00",
+    newPrice: "$15.00",
     quality: stars,
   },
   {
@@ -107,6 +118,16 @@ const products = [
     newPrice: "$18.00",
     quality: stars,
   },
+  {
+    id: 7,
+    kind: "Vegetable",
+    title: "Eggplant",
+    img: img5,
+    oldPrice: "$20.00",
+    newPrice: "$18.00",
+    quality: stars,
+  },
+
   {
     id: 9,
     kind: "Vegetable",
@@ -143,15 +164,7 @@ const products = [
     newPrice: "$16.00",
     quality: stars,
   },
-  {
-    id: 13,
-    kind: "Vegetable",
-    title: "Onion Purple",
-    img: img25,
-    oldPrice: "$20.00",
-    newPrice: "$14.00",
-    quality: stars,
-  },
+
   {
     id: 14,
     kind: "Vegetable",
@@ -170,15 +183,7 @@ const products = [
     newPrice: "$12.00",
     quality: stars,
   },
-  {
-    id: 16,
-    kind: "Fruits",
-    title: "Apricot",
-    img: img3,
-    oldPrice: "$17.00",
-    newPrice: "$12.00",
-    quality: stars,
-  },
+
   {
     id: 17,
     kind: "Fruits",
@@ -188,13 +193,14 @@ const products = [
     newPrice: "$19.00",
     quality: stars,
   },
+
   {
-    id: 18,
-    kind: "Fruits",
-    title: "Banana",
-    img: img6,
-    oldPrice: "$20.00",
-    newPrice: "$15.00",
+    id: 30,
+    kind: "Groats",
+    title: "Rice",
+    img: img30,
+    oldPrice: "$15.00",
+    newPrice: "$11.00",
     quality: stars,
   },
   {
@@ -206,13 +212,24 @@ const products = [
     newPrice: "$18.00",
     quality: stars,
   },
+
   {
-    id: 20,
-    kind: "Fruits",
-    title: "Green Apple",
-    img: img19,
-    oldPrice: "$10.00",
-    newPrice: "$8.00",
+    id: 4,
+    kind: "Vegetable",
+    title: "Cauliflower",
+    img: img12,
+    oldPrice: "$20.00",
+    newPrice: "$11.00",
+    quality: stars,
+  },
+
+  {
+    id: 13,
+    kind: "Vegetable",
+    title: "Onion Purple",
+    img: img25,
+    oldPrice: "$20.00",
+    newPrice: "$14.00",
     quality: stars,
   },
   {
@@ -234,6 +251,15 @@ const products = [
     quality: stars,
   },
   {
+    id: 16,
+    kind: "Fruits",
+    title: "Apricot",
+    img: img3,
+    oldPrice: "$17.00",
+    newPrice: "$12.00",
+    quality: stars,
+  },
+  {
     id: 23,
     kind: "Fruits",
     title: "Strawberry",
@@ -251,15 +277,7 @@ const products = [
     newPrice: "$8.00",
     quality: stars,
   },
-  {
-    id: 25,
-    kind: "Nuts",
-    title: "White Hazelnut",
-    img: img32,
-    oldPrice: "$10.00",
-    newPrice: "$8.00",
-    quality: stars,
-  },
+
   {
     id: 26,
     kind: "Nuts",
@@ -297,15 +315,7 @@ const products = [
     newPrice: "$11.00",
     quality: stars,
   },
-  {
-    id: 30,
-    kind: "Groats",
-    title: "Rice",
-    img: img30,
-    oldPrice: "$15.00",
-    newPrice: "$11.00",
-    quality: stars,
-  },
+
   {
     id: 31,
     kind: "Fresh",

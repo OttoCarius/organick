@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CourseWrap = styled.li`
+export const ProductWrap = styled.li`
   width: 335px;
   padding: 25px 25px 17px 25px;
   background-color: #f9f8f8;
@@ -20,7 +20,7 @@ export const CourseWrap = styled.li`
   }
 `;
 
-export const CourseImg = styled.img`
+export const ProductImg = styled.img`
   background-color: #fff;
   width: 335px;
   height: 300px;

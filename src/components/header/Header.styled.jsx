@@ -23,6 +23,7 @@ export const Logo = styled.div`
   font-family: ${({ theme }) => theme.fonts.main};
   font-size: 38px;
   font-weight: 700;
+  line-height: 44px;
   color: #274c5b;
 `;
 

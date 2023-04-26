@@ -7,10 +7,10 @@ import {
   OldPrice,
   NewPrice,
   KindProduct,
-} from "./HomeProducts.styled";
+} from "../homeProduts/HomeProducts.styled";
 import { NavLink } from "react-router-dom";
 
-const HomeProducts = ({
+const OfferProduct = ({
   id,
   kind,
   title,
@@ -39,4 +39,4 @@ const HomeProducts = ({
   );
 };
 
-export default HomeProducts;
+export default OfferProduct;
