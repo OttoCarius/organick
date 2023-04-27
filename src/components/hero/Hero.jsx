@@ -18,7 +18,7 @@ const Hero = () => {
           Choose the best healthier way <br />
           of life
         </HeroTitle>
-        <HeroLink>
+        <HeroLink to={"/about"}>
           <HeroSpan>
             Explore Now <BsFillArrowRightCircleFill size={19} />
           </HeroSpan>

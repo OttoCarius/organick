@@ -40,13 +40,15 @@ export const ProductsWrap = styled.ul`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 
+  /* flex-wrap: wrap; */
+
   margin-bottom: 122px;
 
   /* @media (max-width: 750px) {
     column-gap: 20px;
     row-gap: 20px;
     display: grid;
-    grid-template-columns: repeat(3, 150px);
+    grid-template-columns: repeat(3, 200px);
     grid-template-rows: repeat(3, 250px);
   }
   @media (max-width: 530px) {

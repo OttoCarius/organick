@@ -1,11 +1,10 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import bgAbout from "../../assets/img/about.png";
+import bgAbout from "../../../assets/img/about/aboutUs.png";
 
 export const AboutSection = styled.section`
-  background-color: #f9f8f8;
-  height: 960px;
-  margin-bottom: 170px;
+  height: 929px;
+  /* margin-bottom: 170px; */
 `;
 
 export const AboutContainer = styled.div`
@@ -15,25 +14,26 @@ export const AboutContainer = styled.div`
   margin: 0 auto;
 
   display: flex;
+  justify-content: space-between;
 `;
 
 export const AboutImgContainer = styled.div`
   background-image: url(${bgAbout});
-  background-color: #f9f8f8;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: -100px center;
-  height: 911px;
-  width: 800px;
-
-  margin-right: 40px;
+  background-position: -120px center;
+  height: 920px;
+  width: 929px;
+  margin-right: 20px;
 `;
 
 export const AboutTextContainer = styled.div`
-  width: 48%;
+  width: 45%;
+  padding: 0 10px;
 
   h2 {
-    width: 530px;
     font-family: ${({ theme }) => theme.fonts.main};
+    width: 530px;
     font-size: 50px;
     font-weight: 800;
     line-height: 59px;
@@ -42,11 +42,12 @@ export const AboutTextContainer = styled.div`
   }
 
   ul {
+    display: flex;
   }
 
   li {
     display: flex;
-    margin-bottom: 32px;
+    align-items: center;
   }
 
   img {
@@ -55,11 +56,10 @@ export const AboutTextContainer = styled.div`
 
   h3 {
     font-family: ${({ theme }) => theme.fonts.main};
-    font-size: 25px;
-    font-weight: 800;
-    line-height: 29px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
     color: #274c5b;
-    margin-bottom: 12px;
   }
 `;
 
@@ -81,13 +81,7 @@ export const Text = styled.p`
   line-height: 29px;
   color: #525c60;
   margin-bottom: 46px;
-`;
-
-export const Text2 = styled.p`
-  font-family: ${({ theme }) => theme.fonts.text};
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 29px;
+  max-width: 650px;
 `;
 
 export const AboutLink = styled(Link)`

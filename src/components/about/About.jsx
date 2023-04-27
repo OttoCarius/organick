@@ -47,7 +47,7 @@ const About = () => {
                 </Text2>
               </div>
             </li>
-            <AboutLink>
+            <AboutLink to={"/shop"}>
               <span>
                 Shop Now <BsFillArrowRightCircleFill size={19} />
               </span>

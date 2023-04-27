@@ -13,10 +13,12 @@ import SingleNew from "../pages/news/singleNew/SingleNew";
 import Licenses from "../pages/licenses/Licenses";
 import OurTeam from "../pages/ourTeam/OurTeam";
 import ErrorPage from "../pages/errorPage/ErrorPage";
+import ScrollToTop from "../utils/scrollToTop";
 
 const RoutserApp = () => {
   return (
     <>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
