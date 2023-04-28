@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import {
   HeaderContainer,
@@ -10,20 +10,33 @@ import {
   NavItem,
   CartLink,
   CartSpan,
+  NavLinkTwo,
+  BurgerMenu,
 } from "./Header.styled";
 import logo from "../../assets/img/Logo.svg";
 import { BsCart3 } from "react-icons/bs";
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <HeaderContainer>
+      <BurgerMenu open={open} onClick={() => setOpen(!open)}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </BurgerMenu>
       <Logo>
         <NavLink to="/">
           <LogoImg src={logo} alt="Logo" height={54} width={36} /> Organick
         </NavLink>
       </Logo>
+
       <Navigate>
-        <NavigateList>
+        <NavigateList open={open}>
+          <NavLinkTwo to="/">
+            <LogoImg src={logo} alt="Logo" height={54} width={36} /> Organick
+          </NavLinkTwo>
           <NavItem>
             <NavLink to="/">Home</NavLink>
           </NavItem>
@@ -49,9 +62,9 @@ const Header = () => {
       </Navigate>
       <Cart>
         <CartLink>
-          <BsCart3 color="white" size={30} />
+          <BsCart3 color="white" size={26} />
         </CartLink>
-        <CartSpan>Cart</CartSpan>
+        <CartSpan></CartSpan>
       </Cart>
     </HeaderContainer>
   );

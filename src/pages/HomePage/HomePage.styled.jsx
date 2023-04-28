@@ -11,6 +11,11 @@ export const HomeCategoriesContainer = styled.div`
   flex-direction: column;
   align-items: center;
 
+  @media (max-width: 650px) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
   h2 {
     font-family: ${({ theme }) => theme.fonts.main};
     font-size: 50px;
@@ -18,6 +23,13 @@ export const HomeCategoriesContainer = styled.div`
     line-height: 59px;
     color: #274c5b;
     margin-bottom: 40px;
+
+    @media (max-width: 650px) {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 49px;
+      margin-bottom: 30px;
+    }
   }
 `;
 
@@ -39,23 +51,37 @@ export const ProductsWrap = styled.ul`
   row-gap: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-
-  /* flex-wrap: wrap; */
-
   margin-bottom: 122px;
 
-  /* @media (max-width: 750px) {
+  @media (max-width: 1440px) {
     column-gap: 20px;
     row-gap: 20px;
     display: grid;
-    grid-template-columns: repeat(3, 200px);
-    grid-template-rows: repeat(3, 250px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
+
+  @media (max-width: 1070px) {
+    column-gap: 20px;
+    row-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  @media (max-width: 860px) {
+    column-gap: 20px;
+    row-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
   @media (max-width: 530px) {
     display: flex;
     flex-direction: column;
     align-items: center;
-  } */
+  }
 `;
 
 export const Button = styled.button`
@@ -72,7 +98,7 @@ export const Button = styled.button`
   transition: background-color 0.7s ease;
   border: none;
 
-  margin-bottom: 190px;
+  margin-bottom: 90px;
 
   :hover {
     background-color: #183541;

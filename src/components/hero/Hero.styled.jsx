@@ -9,6 +9,20 @@ export const HeroSection = styled.section`
   background-position: center center;
   height: 840px;
   margin-bottom: 155px;
+
+  @media (max-width: 900px) {
+    height: 640px;
+    margin-bottom: 95px;
+  }
+
+  @media (max-width: 570px) {
+    height: 440px;
+    margin-bottom: 65px;
+  }
+
+  @media (max-width: 440px) {
+    margin-bottom: 45px;
+  }
 `;
 
 export const HeroContainer = styled.div`
@@ -26,6 +40,27 @@ export const HeroPreTitle = styled.p`
   color: #68a47f;
   margin-bottom: 10px;
   padding-top: 220px;
+
+  @media (max-width: 900px) {
+    padding-top: 120px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 42px;
+  }
+
+  @media (max-width: 570px) {
+    padding-top: 80px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+  }
+
+  @media (max-width: 440px) {
+    padding-top: 100px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+  }
 `;
 
 export const HeroTitle = styled.h1`
@@ -36,6 +71,20 @@ export const HeroTitle = styled.h1`
   line-height: 82px;
   color: #274c5b;
   margin-bottom: 23px;
+
+  @media (max-width: 900px) {
+    width: 400px;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 64px;
+  }
+
+  @media (max-width: 440px) {
+    width: 270px;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 44px;
+  }
 `;
 
 export const HeroLink = styled(Link)`
@@ -49,6 +98,14 @@ export const HeroLink = styled(Link)`
   border-radius: 16px;
   transition: background-color 0.7s ease;
   /* margin-bottom: 246px; */
+
+  @media (max-width: 570px) {
+    padding: 20px 28px;
+  }
+
+  @media (max-width: 440px) {
+    padding: 16px 16px;
+  }
 
   :hover {
     background-color: #fad240;

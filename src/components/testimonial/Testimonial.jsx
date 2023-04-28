@@ -30,8 +30,14 @@ const Testimonial = () => {
             options={{
               perPage: 1,
               arrows: true,
+              pagination: false,
+              drag: "free",
               rewind: true,
-              width: 800,
+              width: 700,
+              breakpoints: {
+                674: { perPage: 1, width: 600 },
+                420: { perPage: 1, width: 400 },
+              },
             }}
           >
             <SplideSlide>

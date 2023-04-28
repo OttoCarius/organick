@@ -2,9 +2,9 @@ import styled from "styled-components";
 import bgPreFooter from "../../assets/img/PreFooter.png";
 
 export const PreFooterContainer = styled.div`
-  padding-right: 30px;
-  padding-left: 30px;
-  max-width: 1400px;
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 100%;
   margin: 0 auto;
 
   background-image: url(${bgPreFooter});
@@ -13,10 +13,32 @@ export const PreFooterContainer = styled.div`
   background-position: center center;
   height: 323px;
   margin-bottom: 117px;
+  border-radius: 20px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 1440px) {
+    background-size: cover;
+    height: 300px;
+    width: 1360px;
+    margin-bottom: 90px;
+    border-radius: 40px;
+  }
+
+  @media (max-width: 1050px) {
+    height: 240px;
+    margin-bottom: 70px;
+  }
+
+  @media (max-width: 560px) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    height: 200px;
+    margin-bottom: 40px;
+  }
 
   h2 {
     font-family: ${({ theme }) => theme.fonts.main};
@@ -24,6 +46,18 @@ export const PreFooterContainer = styled.div`
     font-weight: 800;
     line-height: 59px;
     color: #fff;
+
+    @media (max-width: 1050px) {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 40px;
+    }
+
+    @media (max-width: 790px) {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 38px;
+    }
   }
 
   input {
@@ -36,13 +70,36 @@ export const PreFooterContainer = styled.div`
     line-height: 21px;
     color: #000;
     margin-right: 10px;
+    outline: none;
+
+    @media (max-width: 1050px) {
+      padding: 20px 26px 22px 16px;
+    }
+
+    @media (max-width: 790px) {
+      padding: 16px 10px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 16px;
+    }
+
+    @media (max-width: 560px) {
+      padding: 14px 6px;
+      margin-right: 2px;
+    }
 
     ::placeholder {
       font-family: ${({ theme }) => theme.fonts.text};
       font-size: 18px;
       font-weight: 400;
       line-height: 21px;
-      color: #ababab;
+      color: #274c5b;
+
+      @media (max-width: 560px) {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+      }
     }
   }
 
@@ -57,6 +114,28 @@ export const PreFooterContainer = styled.div`
     border-radius: 10px;
     border: none;
     transition: background-color 0.7s ease;
+
+    @media (max-width: 1050px) {
+      padding: 22px 15px;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 19px;
+    }
+
+    @media (max-width: 750px) {
+      padding: 16px 10px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 16px;
+    }
+
+    @media (max-width: 560px) {
+      padding: 16px 5px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16px;
+      border-radius: 20px;
+    }
 
     :hover {
       background-color: #183541;

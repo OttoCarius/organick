@@ -10,6 +10,15 @@ export const FooterContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 138px;
+
+  @media (max-width: 1120px) {
+    margin-bottom: 2px;
+  }
+
+  @media (max-width: 660px) {
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const ContactWrap = styled.div`
@@ -19,6 +28,15 @@ export const ContactWrap = styled.div`
   padding-right: 51px;
   border-right: 1px solid #d4d4d4;
 
+  @media (max-width: 1120px) {
+    align-items: center;
+    padding-right: 21px;
+  }
+
+  @media (max-width: 660px) {
+    display: none;
+  }
+
   h3 {
     margin-bottom: 32px;
     font-family: ${({ theme }) => theme.fonts.main};
@@ -26,6 +44,12 @@ export const ContactWrap = styled.div`
     font-weight: 700;
     line-height: 35px;
     color: #274c5b;
+
+    @media (max-width: 1120px) {
+      margin-bottom: 28px;
+      font-size: 24px;
+      line-height: 30px;
+    }
   }
 
   ul {
@@ -33,12 +57,22 @@ export const ContactWrap = styled.div`
     flex-direction: column;
     align-items: flex-end;
     gap: 30px;
+
+    @media (max-width: 1120px) {
+      align-items: flex-start;
+      gap: 20px;
+    }
   }
 
   li {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+    @media (max-width: 1120px) {
+      align-items: flex-start;
+      gap: 20px;
+    }
   }
 
   h4 {
@@ -47,6 +81,12 @@ export const ContactWrap = styled.div`
     font-weight: 700;
     line-height: 30px;
     color: #525c60;
+
+    @media (max-width: 1120px) {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 22px;
+    }
   }
 
   p {
@@ -55,6 +95,13 @@ export const ContactWrap = styled.div`
     font-weight: 400;
     line-height: 29px;
     color: #525c60;
+
+    @media (max-width: 1120px) {
+      width: 180px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+    }
   }
 `;
 
@@ -72,6 +119,22 @@ export const LogoWraper = styled.div`
     line-height: 30px;
     color: #525c60;
     margin-bottom: 50px;
+
+    @media (max-width: 1120px) {
+      max-width: 300px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 660px) {
+      max-width: 600px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 17px;
+      margin-bottom: 50px;
+    }
   }
 
   ul {
@@ -80,12 +143,28 @@ export const LogoWraper = styled.div`
     justify-content: center;
 
     gap: 15px;
+
+    @media (max-width: 1120px) {
+      gap: 8px;
+    }
+
+    @media (max-width: 660px) {
+      gap: 10px;
+    }
   }
 
   li {
     padding: 20px;
     border-radius: 50%;
     background-color: #eff6f1;
+
+    @media (max-width: 1120px) {
+      padding: 10px;
+    }
+
+    @media (max-width: 660px) {
+      padding: 20px;
+    }
   }
 `;
 
@@ -104,6 +183,12 @@ export const FooterLink = styled(NavLink)`
   line-height: 44px;
   color: #274c5b;
   margin-bottom: 23px;
+
+  @media (max-width: 660px) {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+  }
 `;
 
 export const FooterLinkPages = styled(NavLink)``;
@@ -115,6 +200,15 @@ export const PagesWrapper = styled.div`
   padding-left: 51px;
   border-left: 1px solid #d4d4d4;
 
+  @media (max-width: 1120px) {
+    align-items: center;
+    padding-left: 21px;
+  }
+
+  @media (max-width: 660px) {
+    display: none;
+  }
+
   h3 {
     margin-bottom: 32px;
     font-family: ${({ theme }) => theme.fonts.main};
@@ -122,6 +216,12 @@ export const PagesWrapper = styled.div`
     font-weight: 700;
     line-height: 35px;
     color: #274c5b;
+
+    @media (max-width: 1120px) {
+      margin-bottom: 28px;
+      font-size: 24px;
+      line-height: 30px;
+    }
   }
 
   li {
@@ -134,11 +234,16 @@ export const PagesWrapper = styled.div`
     font-weight: 400;
     line-height: 49px;
     color: #525c60;
+
+    @media (max-width: 1120px) {
+      align-items: flex-start;
+      gap: 20px;
+    }
   }
 
   p {
     font-family: ${({ theme }) => theme.fonts.text};
-    font-size: 18px;
+    font-size: 8px;
     font-weight: 400;
     line-height: 29px;
     color: #525c60;
