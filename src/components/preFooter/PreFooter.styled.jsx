@@ -32,12 +32,16 @@ export const PreFooterContainer = styled.div`
     margin-bottom: 70px;
   }
 
+  @media (max-width: 980px) {
+    margin-top: 40px;
+  }
+
   @media (max-width: 560px) {
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
-    height: 200px;
-    margin-bottom: 40px;
+    gap: 30px;
+    height: 300px;
+    margin-bottom: 60px;
   }
 
   h2 {
@@ -54,9 +58,9 @@ export const PreFooterContainer = styled.div`
     }
 
     @media (max-width: 790px) {
-      font-size: 28px;
+      font-size: 32px;
       font-weight: 700;
-      line-height: 38px;
+      line-height: 42px;
     }
   }
 
@@ -84,7 +88,7 @@ export const PreFooterContainer = styled.div`
     }
 
     @media (max-width: 560px) {
-      padding: 14px 6px;
+      padding: 16px 10px;
       margin-right: 2px;
     }
 
@@ -123,14 +127,14 @@ export const PreFooterContainer = styled.div`
     }
 
     @media (max-width: 750px) {
-      padding: 16px 10px;
+      padding: 18px 10px;
       font-size: 16px;
       font-weight: 500;
       line-height: 16px;
     }
 
     @media (max-width: 560px) {
-      padding: 16px 5px;
+      /* padding: 18px 10px; */
       font-size: 14px;
       font-weight: 500;
       line-height: 16px;

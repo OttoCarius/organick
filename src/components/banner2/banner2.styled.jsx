@@ -10,6 +10,15 @@ export const Banner2Section = styled.section`
   gap: 40px;
   background-color: #f1f8f4;
   padding: 187px 0;
+
+  @media (max-width: 980px) {
+    gap: 10px;
+    padding: 90px 0;
+  }
+
+  @media (max-width: 980px) {
+    display: none;
+  }
 `;
 
 export const BannerOne = styled.div`
@@ -22,6 +31,22 @@ export const BannerOne = styled.div`
   align-items: center;
   justify-content: center;
 
+  @media (max-width: 1400px) {
+    width: 550px;
+    height: 450px;
+  }
+
+  @media (max-width: 1130px) {
+    width: 450px;
+    height: 400px;
+  }
+
+  @media (max-width: 980px) {
+    width: 300px;
+    height: 300px;
+    background-position: left center;
+  }
+
   p {
     display: inline-block;
     padding: 33px 83px;
@@ -33,6 +58,10 @@ export const BannerOne = styled.div`
     font-weight: 500;
     line-height: 29px;
     color: #274c5b;
+
+    @media (max-width: 1130px) {
+      padding: 20px 20px;
+    }
   }
 `;
 
@@ -46,6 +75,21 @@ export const BannerTwo = styled.div`
   align-items: center;
   justify-content: center;
 
+  @media (max-width: 1400px) {
+    width: 550px;
+    height: 450px;
+  }
+
+  @media (max-width: 1130px) {
+    width: 450px;
+    height: 400px;
+  }
+
+  @media (max-width: 980px) {
+    width: 300px;
+    height: 300px;
+  }
+
   p {
     display: inline-block;
     padding: 33px 83px;
@@ -57,6 +101,9 @@ export const BannerTwo = styled.div`
     font-weight: 500;
     line-height: 29px;
     color: #274c5b;
+    @media (max-width: 1130px) {
+      padding: 20px 20px;
+    }
   }
 `;
 
@@ -70,6 +117,20 @@ export const BannerThree = styled.div`
   align-items: center;
   justify-content: center;
 
+  @media (max-width: 1400px) {
+    width: 550px;
+    height: 450px;
+  }
+  @media (max-width: 1130px) {
+    width: 450px;
+    height: 400px;
+  }
+
+  @media (max-width: 980px) {
+    width: 300px;
+    height: 300px;
+  }
+
   p {
     display: inline-block;
     padding: 33px 83px;
@@ -81,5 +142,9 @@ export const BannerThree = styled.div`
     font-weight: 500;
     line-height: 29px;
     color: #274c5b;
+
+    @media (max-width: 1130px) {
+      padding: 20px 20px;
+    }
   }
 `;
