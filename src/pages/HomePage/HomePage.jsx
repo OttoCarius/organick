@@ -65,7 +65,7 @@ const HomePage = () => {
       <Offer />
       <Eco />
       <Banner2 />
-      {/* <HomeNewsContainer>
+      <HomeNewsContainer>
         <NewsWrap>
           <div>
             <NewPreTitle>News</NewPreTitle>
@@ -94,7 +94,7 @@ const HomePage = () => {
             );
           })}
         </NewListWrap>
-      </HomeNewsContainer> */}
+      </HomeNewsContainer>
     </div>
   );
 };
