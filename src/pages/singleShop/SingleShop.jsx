@@ -18,8 +18,10 @@ import {
   OldPrice,
 } from "../../components/homeProduts/HomeProducts.styled";
 import ProductDesc from "../../components/singleShopComponents/productDesc/ProductDesc";
+import RecomProd from "../../components/singleShopComponents/recomProd/RecomProd";
 
 const SingleShop = () => {
+  // const [value, setValue] = useState(0)
   const { id } = useParams();
   const product = products[id];
 
@@ -55,6 +57,7 @@ const SingleShop = () => {
         </SingleProductInfoWrap>
       </SingleProductWrap>
       <ProductDesc />
+      <RecomProd />
     </div>
   );
 };
