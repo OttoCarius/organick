@@ -86,10 +86,12 @@ const HomePage = () => {
                 key={id}
                 date={tiding.date}
                 image={tiding.image}
+                bigImge={tiding.bigImge}
                 author={tiding.author}
                 title={tiding.title}
                 text={tiding.text}
                 bigtext={tiding.bigtext}
+                id={tiding.id}
               ></News>
             );
           })}

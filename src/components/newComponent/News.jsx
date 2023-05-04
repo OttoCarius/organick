@@ -9,7 +9,7 @@ import {
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import person from "../../assets/img/person.svg";
 
-const News = ({ id, date, image, author, title, text, bigtext }) => {
+const News = ({ id, date, image, author, title, text }) => {
   return (
     <div>
       <NewsItemWrap>

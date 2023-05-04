@@ -1,5 +1,5 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react";
+// import { Link } from "react-router-dom";
 import {
   ProductsWrap,
   ShopCategoriesContainer,
@@ -10,19 +10,18 @@ import { RecomTitle } from "./recomProd.styled";
 
 const itemsPerRow = 4;
 
-const RecomProd = ({ id }) => {
-  //   const [next, setNext] = useState(itemsPerRow);
-
-  //   const handleMore = () => {
-  //     setNext(next + itemsPerRow);
-  //   };
+const RecomProd = () => {
+  const [next] = useState(itemsPerRow);
 
   return (
     <ShopCategoriesContainer>
       <RecomTitle>Related Products</RecomTitle>
-      <NavLink to={`/shop/${id}`}>
-        <ProductsWrap>
-          {products?.slice(0, itemsPerRow)?.map((product, id) => {
+      {/* <Link to={`/shop/${id}`}> */}
+      <ProductsWrap>
+        {products
+          .sort(() => (Math.random() > 0.5 ? 1 : -1))
+          ?.slice(0, next)
+          ?.map((product, id) => {
             return (
               <HomeProducts
                 key={id}
@@ -36,8 +35,8 @@ const RecomProd = ({ id }) => {
               ></HomeProducts>
             );
           })}
-        </ProductsWrap>
-      </NavLink>
+      </ProductsWrap>
+      {/* </Link> */}
     </ShopCategoriesContainer>
   );
 };

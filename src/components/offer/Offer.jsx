@@ -27,7 +27,7 @@ const Offer = () => {
           </OfferLink>
         </OffersContainer>
         <ProductsWrap>
-          {products?.slice(11, 15)?.map((product, id) => {
+          {products?.slice(10, 14)?.map((product, id) => {
             return (
               <OfferProduct
                 key={id}
