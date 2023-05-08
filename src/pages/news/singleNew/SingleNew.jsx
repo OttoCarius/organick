@@ -8,6 +8,7 @@ import {
   TitleWrap,
   TextWrap,
 } from "./SingleNew.styled";
+import NewsInfo from "../../../components/newComponent/newsInfo/NewsInfo";
 
 const SingleNew = () => {
   const { id } = useParams();
@@ -31,6 +32,7 @@ const SingleNew = () => {
           <p>{tiding.bigText}</p>
         </TextWrap>
       </SingleNewInfoWrap>
+      <NewsInfo />
     </div>
   );
 };

@@ -5,10 +5,6 @@ export const NewsWrap = styled.div`
   padding-left: 30px;
   max-width: 1400px;
   margin: 0 auto;
-
-  display: flex;
-
-  align-items: center;
   gap: 20px;
 
   @media (max-width: 650px) {

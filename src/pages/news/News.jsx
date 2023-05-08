@@ -8,9 +8,8 @@ import News from "../../components/newComponent/News";
 const Tidings = () => {
   return (
     <section>
-      {/* <NewsWrap> */}
       <NewHero />
-      <div>
+      <NewsWrap>
         <NewListWrap>
           {tidings?.map((tiding, id) => {
             return (
@@ -28,8 +27,7 @@ const Tidings = () => {
             );
           })}
         </NewListWrap>
-      </div>
-      {/* </NewsWrap> */}
+      </NewsWrap>
     </section>
   );
 };
