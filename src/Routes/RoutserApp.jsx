@@ -12,6 +12,7 @@ import News from "../pages/news/News";
 import SingleNew from "../pages/news/singleNew/SingleNew";
 import Licenses from "../pages/licenses/Licenses";
 import OurTeam from "../pages/ourTeam/OurTeam";
+import ContactUs from "../pages/contactUs/ContactUs";
 import ErrorPage from "../pages/errorPage/ErrorPage";
 import ScrollToTop from "../utils/scrollToTop";
 
@@ -32,6 +33,7 @@ const RoutserApp = () => {
           <Route path="/news/:id" element={<SingleNew />} />
           <Route path="/licenses" element={<Licenses />} />
           <Route path="/team" element={<OurTeam />} />
+          <Route path="/contactUs" element={<ContactUs />} />
           <Route path="*" element={<ErrorPage />} />
         </Route>
       </Routes>

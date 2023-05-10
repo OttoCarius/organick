@@ -74,6 +74,9 @@ const Footer = () => {
               <FooterLinkPages to="/licenses">Licences</FooterLinkPages>
             </li>
             <li>
+              <FooterLinkPages to="/contactUs">Contact Us</FooterLinkPages>
+            </li>
+            <li>
               <FooterLinkPages>Password Protected</FooterLinkPages>
             </li>
             <li>
