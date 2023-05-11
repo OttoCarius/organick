@@ -15,12 +15,25 @@ export const NewsItemWrap = styled.li`
     background-color: #d4d2d2;
     box-shadow: 0px 10px 45px rgba(0, 0, 0, 0.45);
   }
-  /* @media (max-width: 750px) {
-    width: 160px;
+  @media (max-width: 1450px) {
+    width: 500px;
   }
-  @media (max-width: 530px) {
-    width: 270px;
-  } */
+  @media (max-width: 1090px) {
+    width: 400px;
+  }
+
+  @media (max-width: 860px) {
+    width: 300px;
+    height: 360px;
+  }
+
+  @media (max-width: 630px) {
+    width: 500px;
+  }
+
+  @media (max-width: 540px) {
+    width: 280px;
+  }
 
   h5 {
     position: absolute;
@@ -51,14 +64,26 @@ export const NewsImg = styled.img`
   align-items: center;
   justify-content: center;
 
-  /* @media (max-width: 750px) {
-    width: 160px;
-    height: 180px;
+  @media (max-width: 1450px) {
+    width: 500px;
   }
-  @media (max-width: 530px) {
-    width: 270px;
-    height: 300px;
-  } */
+
+  @media (max-width: 1090px) {
+    width: 400px;
+    height: 500px;
+  }
+
+  @media (max-width: 860px) {
+    width: 300px;
+    height: 400px;
+  }
+
+  @media (max-width: 630px) {
+    width: 500px;
+  }
+  @media (max-width: 540px) {
+    width: 280px;
+  }
 `;
 
 export const NewsLink = styled(NavLink)`
@@ -71,6 +96,10 @@ export const NewsLink = styled(NavLink)`
   line-height: 23px;
   border-radius: 16px;
   transition: background-color 0.7s ease;
+
+  @media (max-width: 860px) {
+    padding: 12px 15px;
+  }
 
   :hover {
     background-color: #faef57;
@@ -91,6 +120,36 @@ export const NewInfoWrap = styled.div`
   border-radius: 30px;
   z-index: 1;
   box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.55);
+
+  @media (max-width: 1450px) {
+    margin-left: 0;
+    width: 500px;
+    height: 300px;
+  }
+
+  @media (max-width: 1090px) {
+    margin-top: -240px;
+    width: 400px;
+    height: 320px;
+  }
+
+  @media (max-width: 860px) {
+    margin-top: -280px;
+    width: 300px;
+    height: 360px;
+  }
+  @media (max-width: 630px) {
+    width: 500px;
+    height: 290px;
+    margin-top: -180px;
+  }
+
+  @media (max-width: 540px) {
+    width: 280px;
+    height: 340px;
+    margin-top: -240px;
+    padding: 35px 47px;
+  }
 
   h4 {
     color: #274c5b;
@@ -117,6 +176,12 @@ export const NewInfoWrap = styled.div`
     font-weight: 800;
     line-height: 29px;
     margin-bottom: 5px;
+
+    @media (max-width: 1090px) {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 22px;
+    }
   }
 `;
 

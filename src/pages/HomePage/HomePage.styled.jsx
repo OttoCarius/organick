@@ -12,8 +12,8 @@ export const HomeCategoriesContainer = styled.div`
   align-items: center;
 
   @media (max-width: 650px) {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 1px;
+    padding-left: 1px;
   }
 
   h2 {
@@ -118,6 +118,10 @@ export const NewsMoreLink = styled(NavLink)`
   transition: background-color 0.7s ease;
   margin-top: 220px;
 
+  @media (max-width: 630px) {
+    margin-top: 20px;
+  }
+
   :hover {
     background-color: #b8e5f8;
   }
@@ -125,6 +129,10 @@ export const NewsMoreLink = styled(NavLink)`
   span {
     display: flex;
     gap: 10px;
+  }
+
+  @media (max-width: 860px) {
+    padding: 20px 34px;
   }
 `;
 
@@ -141,6 +149,10 @@ export const NewsWrap = styled.div`
   align-items: center;
 
   margin-bottom: 48px;
+
+  @media (max-width: 630px) {
+    flex-direction: column;
+  }
 `;
 
 export const NewListWrap = styled.div`
@@ -154,6 +166,10 @@ export const NewListWrap = styled.div`
   grid-template-columns: repeat(2, 1fr);
 
   margin-bottom: 122px;
+
+  @media (max-width: 630px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const NewPreTitle = styled.p`
@@ -173,6 +189,16 @@ export const NewsTitle = styled.h3`
   line-height: 59px;
   color: #274c5b;
   margin-bottom: 12px;
+
+  @media (max-width: 1090px) {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  @media (max-width: 860px) {
+    font-size: 28px;
+    line-height: 30px;
+  }
 `;
 
 // export const MinContainer = styled.div`

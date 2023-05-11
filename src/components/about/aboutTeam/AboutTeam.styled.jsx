@@ -5,6 +5,7 @@ export const TeamContainer = styled.div`
   padding-left: 30px;
   max-width: 1400px;
   margin: 0 auto;
+  margin-bottom: 120px;
 
   display: flex;
   flex-direction: column;
@@ -20,6 +21,11 @@ export const TeamContainer = styled.div`
     line-height: 49px;
     color: #7eb693;
     margin-bottom: 10px;
+
+    @media (max-width: 530px) {
+      font-size: 32px;
+      line-height: 42px;
+    }
   }
 
   h3 {
@@ -29,6 +35,12 @@ export const TeamContainer = styled.div`
     line-height: 59px;
     color: #274c5b;
     margin-bottom: 20px;
+
+    @media (max-width: 530px) {
+      font-size: 34px;
+      font-weight: 700;
+      line-height: 40px;
+    }
   }
 `;
 
@@ -40,6 +52,10 @@ export const TeamText = styled.p`
   color: #525c60;
   margin-bottom: 42px;
   max-width: 800px;
+
+  @media (max-width: 530px) {
+    width: 300px;
+  }
 `;
 
 export const ImgWrap = styled.div`
@@ -51,6 +67,33 @@ export const ImgWrap = styled.div`
   img {
     border-radius: 20px;
     width: 400px;
+  }
+
+  @media (max-width: 1440px) {
+    column-gap: 20px;
+    row-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 1070px) {
+    column-gap: 20px;
+    row-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 860px) {
+    column-gap: 20px;
+    row-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 530px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
@@ -66,6 +109,10 @@ export const PersonInfoWrap = styled.div`
   padding: 0 28px;
   box-shadow: 0px 10px 45px rgba(0, 0, 0, 0.45);
 
+  @media (max-width: 860px) {
+    margin-bottom: 20px;
+  }
+
   h4 {
     font-family: ${({ theme }) => theme.fonts.main};
     font-size: 25px;
@@ -73,7 +120,8 @@ export const PersonInfoWrap = styled.div`
     line-height: 29px;
     color: #274c5b;
     margin-bottom: 10px;
-    margin-top: 35px;
+    margin-top: 25px;
+    width: 100px;
   }
 
   ul {

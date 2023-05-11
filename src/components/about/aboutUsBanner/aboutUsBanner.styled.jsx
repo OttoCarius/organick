@@ -6,6 +6,10 @@ export const AboutUsBannerSection = styled.section`
 
   padding: 180px 0;
   margin-bottom: 141px;
+
+  @media (max-width: 800px) {
+    padding: 80px 0;
+  }
 `;
 
 export const AboutUsBannerContainer = styled.div`
@@ -42,6 +46,26 @@ export const AboutUsBannerContainer = styled.div`
   ul {
     display: flex;
     gap: 21px;
+
+    @media (max-width: 1040px) {
+      column-gap: 20px;
+      row-gap: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 600px) {
+      column-gap: 20px;
+      row-gap: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* @media (max-width: 320px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    } */
   }
 
   li {
@@ -51,6 +75,21 @@ export const AboutUsBannerContainer = styled.div`
     border-radius: 30px;
     height: 300px;
     width: 300px;
+
+    @media (max-width: 1130px) {
+      height: 240px;
+      width: 240px;
+    }
+
+    @media (max-width: 600px) {
+      height: 200px;
+      width: 200px;
+    }
+
+    @media (max-width: 460px) {
+      height: 120px;
+      width: 120px;
+    }
   }
 
   p {
@@ -60,5 +99,18 @@ export const AboutUsBannerContainer = styled.div`
     line-height: 29px;
     color: #ffff;
     margin-top: 24px;
+
+    @media (max-width: 1130px) {
+      margin-top: 12px;
+    }
+
+    @media (max-width: 600px) {
+      margin-top: 10px;
+    }
+    @media (max-width: 460px) {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 22px;
+    }
   }
 `;
