@@ -16,7 +16,7 @@ export const AboutHeroWrap = styled.section`
   @media (max-width: 900px) {
     height: 400px;
     margin-bottom: 95px;
-
+    background-position: left 20% center;
     margin-top: -80px;
   }
 
@@ -38,6 +38,10 @@ export const AboutHeroWrap = styled.section`
     font-weight: 800;
     line-height: 82px;
     color: #274c5b;
+
+    @media (max-width: 900px) {
+      color: #284d5e;
+    }
 
     @media (max-width: 570px) {
       font-size: 50px;

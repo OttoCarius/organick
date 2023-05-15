@@ -11,6 +11,10 @@ export const SingleProductWrap = styled.div`
   align-items: center;
   gap: 20px;
 
+  @media (max-width: 780px) {
+    flex-direction: column;
+  }
+
   @media (max-width: 650px) {
     padding-right: 10px;
     padding-left: 10px;
@@ -32,19 +36,29 @@ export const ProdImgWrap = styled.div`
     background-color: #d4d2d2;
     box-shadow: 0px 10px 45px rgba(0, 0, 0, 0.45);
   }
+
+  @media (max-width: 1300px) {
+    width: 400px;
+    height: 500px;
+    padding: 40px 25px 40px 25px;
+  }
+
   @media (max-width: 1080px) {
-    width: 260px;
+    width: 400px;
   }
   @media (max-width: 860px) {
     width: 300px;
+    height: 400px;
   }
 
-  @media (max-width: 650px) {
-    width: 240px;
+  @media (max-width: 780px) {
+    width: 400px;
+    height: 460px;
   }
 
   @media (max-width: 530px) {
     width: 280px;
+    height: 380px;
   }
 `;
 
@@ -77,19 +91,23 @@ export const ProdImg = styled.img`
   align-items: center;
   justify-content: center;
 
+  @media (max-width: 1300px) {
+    width: 400px;
+  }
+
   @media (max-width: 1080px) {
-    width: 230px;
-    height: 230px;
+    width: 400px;
   }
   @media (max-width: 860px) {
     width: 280px;
     height: 280px;
   }
 
-  @media (max-width: 650px) {
-    width: 210px;
-    height: 210px;
+  @media (max-width: 780px) {
+    width: 350px;
+    height: 350px;
   }
+
   @media (max-width: 530px) {
     width: 280px;
     height: 270px;
@@ -98,6 +116,15 @@ export const ProdImg = styled.img`
 
 export const SingleProductInfoWrap = styled.div`
   max-width: 650px;
+
+  @media (max-width: 1140px) {
+    max-width: 400px;
+  }
+
+  @media (max-width: 420px) {
+    max-width: 300px;
+  }
+
   h4 {
     font-family: ${({ theme }) => theme.fonts.main};
     font-size: 40px;
@@ -152,6 +179,15 @@ export const InputWrapper = styled.div`
     border: 3px solid #274c5b;
 
     margin-right: 20px;
+
+    @media (max-width: 1140px) {
+      width: 100px;
+      height: 60px;
+    }
+
+    @media (max-width: 420px) {
+      width: 60px;
+    }
   }
 
   button {
@@ -164,6 +200,14 @@ export const InputWrapper = styled.div`
     color: #fff;
     border-radius: 16px;
     border: none;
+
+    @media (max-width: 1140px) {
+      width: 160px;
+      height: 60px;
+    }
+    @media (max-width: 420px) {
+      width: 100px;
+    }
   }
 
   span {
@@ -171,5 +215,9 @@ export const InputWrapper = styled.div`
     align-items: center;
     justify-content: center;
     gap: 10px;
+
+    @media (max-width: 420px) {
+      font-size: 16px;
+    }
   }
 `;

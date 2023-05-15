@@ -26,6 +26,11 @@ export const ServiceInfoWrap = styled.div`
     line-height: 49px;
     color: #7eb693;
     text-align: center;
+
+    @media (max-width: 560px) {
+      font-size: 30px;
+      line-height: 42px;
+    }
   }
 
   h2 {
@@ -35,6 +40,12 @@ export const ServiceInfoWrap = styled.div`
     line-height: 59px;
     color: #274c5b;
     text-align: center;
+
+    @media (max-width: 560px) {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 40px;
+    }
   }
 `;
 
@@ -50,6 +61,18 @@ export const ServiceInfoContainer = styled.div`
     line-height: 29px;
     color: #274c5b;
     margin-bottom: 6px;
+
+    @media (max-width: 940px) {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    @media (max-width: 790px) {
+      font-size: 18px;
+    }
+    @media (max-width: 360px) {
+      font-size: 16px;
+    }
   }
 
   p {
@@ -58,6 +81,14 @@ export const ServiceInfoContainer = styled.div`
     font-weight: 400;
     line-height: 29px;
     color: #525c60;
+
+    @media (max-width: 940px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+    @media (max-width: 790px) {
+      font-size: 14px;
+    }
   }
 
   img {
@@ -68,7 +99,19 @@ export const ServiceInfoContainer = styled.div`
 export const ListOne = styled.ul`
   display: flex;
   flex-direction: column;
+
   gap: 40px;
+
+  @media (max-width: 940px) {
+    gap: 20px;
+  }
+
+  @media (max-width: 560px) {
+    margin-right: 30px;
+  }
+  @media (max-width: 360px) {
+    margin-right: 20px;
+  }
 
   li {
     display: flex;
@@ -79,6 +122,17 @@ export const ListOne = styled.ul`
   p {
     width: 390px;
     text-align: end;
+
+    @media (max-width: 1530px) {
+      width: 240px;
+    }
+    @media (max-width: 790px) {
+      width: 140px;
+    }
+
+    @media (max-width: 360px) {
+      width: 120px;
+    }
   }
 `;
 
@@ -86,6 +140,10 @@ export const ListTwo = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 40px;
+
+  @media (max-width: 940px) {
+    gap: 20px;
+  }
 
   li {
     display: flex;
@@ -95,9 +153,41 @@ export const ListTwo = styled.ul`
 
   p {
     width: 390px;
+
+    @media (max-width: 1530px) {
+      width: 240px;
+    }
+    @media (max-width: 790px) {
+      width: 140px;
+    }
+    @media (max-width: 360px) {
+      width: 120px;
+    }
   }
 `;
 
 export const ProductImg = styled.img`
   height: 800px;
+
+  @media (max-width: 1530px) {
+    height: 600px;
+  }
+
+  @media (max-width: 940px) {
+    height: 550px;
+    width: 300px;
+  }
+
+  @media (max-width: 790px) {
+    height: 400px;
+    width: 300px;
+  }
+
+  @media (max-width: 600px) {
+    height: 360px;
+  }
+
+  @media (max-width: 560px) {
+    display: none;
+  }
 `;

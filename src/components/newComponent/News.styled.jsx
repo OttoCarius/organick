@@ -4,13 +4,13 @@ import { NavLink } from "react-router-dom";
 export const NewsItemWrap = styled.li`
   width: 677px;
   height: 530px;
-  background-color: #f9f8f8;
+  /* background-color: #f9f8f8; */
   box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.55);
   border-radius: 50px;
   transition: 0.7s all ease;
   cursor: pointer;
+  margin-bottom: 360px;
 
-  margin-bottom: 185px;
   :hover {
     background-color: #d4d2d2;
     box-shadow: 0px 10px 45px rgba(0, 0, 0, 0.45);
@@ -20,23 +20,26 @@ export const NewsItemWrap = styled.li`
   }
   @media (max-width: 1090px) {
     width: 400px;
+    margin-bottom: 200px;
   }
 
   @media (max-width: 860px) {
     width: 300px;
     height: 360px;
+    margin-bottom: 260px;
   }
 
   @media (max-width: 630px) {
     width: 500px;
+    margin-bottom: 290px;
   }
 
   @media (max-width: 540px) {
     width: 280px;
+    margin-bottom: 240px;
   }
 
   h5 {
-    position: absolute;
     z-index: 2;
     color: #ffffff;
     background-color: #274c5b;
@@ -54,15 +57,20 @@ export const NewsItemWrap = styled.li`
   }
 `;
 
+export const NewsContent = styled.div`
+  /* z-index: -1; */
+`;
+
 export const NewsImg = styled.img`
-  position: relative;
-  background-color: #fff;
+  /* position: relative; */
+  /* background-color: #fff; */
   width: 677px;
   height: 530px;
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: -1;
 
   @media (max-width: 1450px) {
     width: 500px;
@@ -70,19 +78,21 @@ export const NewsImg = styled.img`
 
   @media (max-width: 1090px) {
     width: 400px;
-    height: 500px;
+    height: 400px;
   }
 
   @media (max-width: 860px) {
     width: 300px;
-    height: 400px;
+    height: 300px;
   }
 
   @media (max-width: 630px) {
     width: 500px;
+    height: 400px;
   }
   @media (max-width: 540px) {
     width: 280px;
+    height: 300px;
   }
 `;
 
@@ -94,7 +104,7 @@ export const NewsLink = styled(NavLink)`
   font-size: 20px;
   font-weight: 700;
   line-height: 23px;
-  border-radius: 16px;
+  border-radius: 10px;
   transition: background-color 0.7s ease;
 
   @media (max-width: 860px) {
@@ -112,43 +122,40 @@ export const NewsLink = styled(NavLink)`
 `;
 
 export const NewInfoWrap = styled.div`
-  position: absolute;
+  /* position: absolute; */
   padding: 45px 57px;
   background-color: #fff;
-  margin-top: -180px;
-  margin-left: 60px;
+  /* margin-top: -180px;
+  margin-left: 60px; */
+
   border-radius: 30px;
   z-index: 1;
   box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.55);
 
   @media (max-width: 1450px) {
-    margin-left: 0;
+    /* margin-left: 0; */
     width: 500px;
     height: 300px;
   }
 
   @media (max-width: 1090px) {
-    margin-top: -240px;
     width: 400px;
-    height: 320px;
+    height: 280px;
+    padding: 25px 27px;
   }
 
   @media (max-width: 860px) {
-    margin-top: -280px;
     width: 300px;
-    height: 360px;
+    height: 280px;
   }
   @media (max-width: 630px) {
     width: 500px;
-    height: 290px;
-    margin-top: -180px;
+    height: 240px;
   }
 
   @media (max-width: 540px) {
     width: 280px;
-    height: 340px;
-    margin-top: -240px;
-    padding: 35px 47px;
+    height: 280px;
   }
 
   h4 {

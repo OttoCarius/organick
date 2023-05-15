@@ -14,12 +14,38 @@ export const AboutSection = styled.section`
   align-items: center;
   text-align: center;
 
+  @media (max-width: 900px) {
+    height: 400px;
+    margin-bottom: 95px;
+    background-position: left 20% center;
+    margin-top: -80px;
+  }
+
+  @media (max-width: 570px) {
+    height: 360px;
+    margin-bottom: 65px;
+    margin-top: -80px;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: -40px;
+    height: 280px;
+    margin-bottom: 45px;
+  }
+
   h2 {
     font-family: ${({ theme }) => theme.fonts.main};
     font-size: 70px;
     font-weight: 800;
     line-height: 82px;
     color: #274c5b;
+
+    @media (max-width: 570px) {
+      font-size: 50px;
+      font-weight: 800;
+      line-height: 64px;
+      color: #27363b;
+    }
   }
 `;
 
@@ -29,6 +55,11 @@ export const ShopCategoriesContainer = styled.div`
   max-width: 1400px;
   margin: 0 auto;
   margin-top: 90px;
+
+  @media (max-width: 530px) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 `;
 
 export const ProductsWrap = styled.ul`
@@ -40,10 +71,34 @@ export const ProductsWrap = styled.ul`
   row-gap: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-
-  /* flex-wrap: wrap; */
-
   margin-bottom: 122px;
+
+  @media (max-width: 1500px) {
+    column-gap: 20px;
+    row-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 1070px) {
+    column-gap: 20px;
+    row-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 860px) {
+    column-gap: 20px;
+    row-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 530px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const Button = styled.button`
@@ -88,6 +143,10 @@ export const Input = styled.input`
   line-height: 26px;
   color: #274c5b;
   outline: none;
+
+  @media (max-width: 530px) {
+    width: 280px;
+  }
 
   ::placeholder {
     font-family: ${({ theme }) => theme.fonts.main};

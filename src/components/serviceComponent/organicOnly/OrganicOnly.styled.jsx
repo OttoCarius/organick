@@ -8,6 +8,14 @@ export const OrganicOnlySection = styled.div`
   height: 820px;
   margin-bottom: 140px;
 
+  @media (max-width: 980px) {
+    height: 620px;
+  }
+
+  @media (max-width: 480px) {
+    height: 400px;
+  }
+
   div {
     padding-top: 100px;
     padding-right: 30px;
@@ -24,6 +32,7 @@ export const OrganicOnlySection = styled.div`
     @media (max-width: 650px) {
       padding-right: 10px;
       padding-left: 10px;
+      padding-top: 60px;
     }
   }
 
@@ -33,6 +42,11 @@ export const OrganicOnlySection = styled.div`
     font-weight: 400;
     line-height: 49px;
     color: #7eb693;
+
+    @media (max-width: 980px) {
+      font-size: 34px;
+      line-height: 42px;
+    }
   }
 
   h2 {
@@ -41,6 +55,18 @@ export const OrganicOnlySection = styled.div`
     font-weight: 800;
     line-height: 59px;
     color: #274c5b;
+    text-align: center;
+
+    @media (max-width: 980px) {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 42px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 28px;
+      line-height: 32px;
+    }
   }
 
   p {
@@ -49,7 +75,6 @@ export const OrganicOnlySection = styled.div`
     font-weight: 400;
     line-height: 29px;
     color: #525c60;
-
     max-width: 670px;
     text-align: center;
   }

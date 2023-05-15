@@ -49,15 +49,13 @@ const SingleShop = () => {
             <p>Quantity : </p>
             <input type="number" />
             <button type="button">
-              <span>
-                Add To Cart <BsFillArrowRightCircleFill />
-              </span>
+              <span>Add To Cart</span>
             </button>
           </InputWrapper>
         </SingleProductInfoWrap>
       </SingleProductWrap>
       <ProductDesc />
-      <RecomProd />
+      {/* <RecomProd /> */}
     </div>
   );
 };

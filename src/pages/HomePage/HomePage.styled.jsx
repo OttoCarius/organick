@@ -147,7 +147,6 @@ export const NewsWrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   margin-bottom: 48px;
 
   @media (max-width: 630px) {

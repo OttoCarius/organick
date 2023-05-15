@@ -5,15 +5,16 @@ import {
   NewsLink,
   NewInfoWrap,
   PersonWrap,
+  NewsContent,
 } from "./News.styled";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import person from "../../assets/img/person.svg";
 
 const News = ({ id, date, image, author, title, text }) => {
   return (
-    <div>
+    <NewsContent>
       <NewsItemWrap>
-        <h5>{date}</h5>
+        {/* <h5>{date}</h5> */}
         <NewsImg src={image} alt={title} />
         <NewInfoWrap>
           <PersonWrap>
@@ -29,7 +30,7 @@ const News = ({ id, date, image, author, title, text }) => {
           </NewsLink>
         </NewInfoWrap>
       </NewsItemWrap>
-    </div>
+    </NewsContent>
   );
 };
 

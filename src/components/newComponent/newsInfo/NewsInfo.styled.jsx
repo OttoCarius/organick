@@ -11,6 +11,7 @@ export const NewsInfoContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 40px;
+  margin-top: 60px;
 
   @media (max-width: 650px) {
     padding-right: 10px;
@@ -26,6 +27,17 @@ export const NewsInfoContainer = styled.div`
     line-height: 41px;
     color: #274c5b;
     margin-bottom: 24px;
+
+    @media (max-width: 920px) {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 36px;
+    }
+    @media (max-width: 630px) {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 30px;
+    }
   }
 
   p {
@@ -37,5 +49,14 @@ export const NewsInfoContainer = styled.div`
 
     max-width: 900px;
     margin-bottom: 40px;
+
+    @media (max-width: 920px) {
+      line-height: 24px;
+    }
+
+    @media (max-width: 630px) {
+      font-size: 16px;
+      line-height: 22px;
+    }
   }
 `;
