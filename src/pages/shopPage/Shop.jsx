@@ -50,8 +50,8 @@ const Shop = () => {
               return (
                 <HomeProducts
                   key={id}
-                  kind={product.kind}
                   img={product.img}
+                  kind={product.kind}
                   title={product.title}
                   oldPrice={product.oldPrice}
                   newPrice={product.newPrice}

@@ -3,26 +3,18 @@ import { NavLink } from "react-router-dom";
 
 export const OfferSection = styled.section`
   background-color: #274c5b;
-  height: 1050px;
+  height: 950px;
+
   @media (max-width: 1441px) {
-    height: 1250px;
+    height: 800px;
   }
 
-  @media (max-width: 1080px) {
-    height: 1000px;
-    /* margin-bottom: 60px; */
+  @media (max-width: 1040px) {
+    height: 860px;
   }
 
-  @media (max-width: 860px) {
-    height: 1100px;
-  }
-
-  @media (max-width: 650px) {
-    height: 1000px;
-  }
-
-  @media (max-width: 530px) {
-    height: 2000px;
+  @media (max-width: 460px) {
+    height: 640px;
   }
 `;
 

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 export const HeaderContainer = styled.div`
@@ -25,7 +24,7 @@ export const BurgerMenu = styled.div`
     height: 2.8rem;
     /* position: fixed; */
     top: 60px;
-    left: 20px;
+    left: 18px;
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
@@ -34,7 +33,7 @@ export const BurgerMenu = styled.div`
     z-index: 22;
 
     span {
-      width: 4rem;
+      width: 3rem;
       height: 0.2rem;
       border-radius: 10px;
       background-color: ${({ open }) => (open ? "#fffdfd" : "#274c5b")};
@@ -214,7 +213,7 @@ export const Cart = styled.div`
   }
 `;
 
-export const CartLink = styled(Link)`
+export const CartBtn = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -222,22 +221,40 @@ export const CartLink = styled(Link)`
   height: 56px;
   border-radius: 50%;
   background-color: #274c5b;
+  border: none;
 
   @media (max-width: 1116px) {
-    width: 46px;
-    height: 46px;
-  }
-
-  @media (max-width: 480px) {
-    width: 36px;
-    height: 36px;
+    width: 52px;
+    height: 52px;
   }
 `;
 
 export const CartSpan = styled.span`
-  margin-left: 12px;
-  color: #274c5b;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #274c5b;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  margin-top: -60px;
+  margin-left: -20px;
+`;
+
+export const CartItemsCount = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #274c5b;
+  color: #fff;
+  border: none;
+  margin-top: -40px;
+  margin-right: -9px;
+  font-size: 14px;
 `;

@@ -28,8 +28,8 @@ const HomeProducts = ({
           <h4>{title}</h4>
           <PriceWrap>
             <PriceContainer>
-              <OldPrice>{oldPrice}</OldPrice>
-              <NewPrice>{newPrice}</NewPrice>
+              <OldPrice>{oldPrice}$</OldPrice>
+              <NewPrice>{newPrice}$</NewPrice>
             </PriceContainer>
             <img src={quality} alt="stars" />
           </PriceWrap>

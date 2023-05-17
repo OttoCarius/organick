@@ -14,6 +14,8 @@ import Licenses from "../pages/licenses/Licenses";
 import OurTeam from "../pages/ourTeam/OurTeam";
 import ContactUs from "../pages/contactUs/ContactUs";
 import ErrorPage from "../pages/errorPage/ErrorPage";
+import ConfirmOrder from "../pages/confirmOrder/ConfirmOrder";
+import BuyPage from "../pages/buyPage/BuyPage";
 import ScrollToTop from "../utils/scrollToTop";
 
 const RoutserApp = () => {
@@ -34,6 +36,8 @@ const RoutserApp = () => {
           <Route path="/licenses" element={<Licenses />} />
           <Route path="/team" element={<OurTeam />} />
           <Route path="/contactUs" element={<ContactUs />} />
+          <Route path="/confirm" element={<ConfirmOrder />} />
+          <Route path="/buy" element={<BuyPage />} />
           <Route path="*" element={<ErrorPage />} />
         </Route>
       </Routes>

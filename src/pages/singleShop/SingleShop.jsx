@@ -2,7 +2,8 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { products } from "../../helpers/products";
 import SingleHero from "../../components/singleShopComponents/SingleHero";
-import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import {
   SingleProductWrap,
   ProdImgWrap,
@@ -18,12 +19,25 @@ import {
   OldPrice,
 } from "../../components/homeProduts/HomeProducts.styled";
 import ProductDesc from "../../components/singleShopComponents/productDesc/ProductDesc";
-import RecomProd from "../../components/singleShopComponents/recomProd/RecomProd";
+import { deleteItemFromCart, setItemInCart } from "../../redux/cart/reducer";
 
 const SingleShop = () => {
-  // const [value, setValue] = useState(0)
   const { id } = useParams();
   const product = products[id];
+  const items = useSelector((state) => state.cart.itemsInCart);
+
+  const isItemsInCart = items.some((item) => item.id === product.id);
+
+  const dispatch = useDispatch();
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    if (isItemsInCart) {
+      dispatch(deleteItemFromCart(product.id));
+    } else {
+      dispatch(setItemInCart(product));
+    }
+  };
 
   return (
     <div>
@@ -46,16 +60,19 @@ const SingleShop = () => {
             1500s, when an unknown printer took a galley.
           </InfoText>
           <InputWrapper>
-            <p>Quantity : </p>
-            <input type="number" />
-            <button type="button">
-              <span>Add To Cart</span>
+            {/* <p>Quantity : </p>
+            <input type="number" /> */}
+            <button onClick={handleClick}>
+              {isItemsInCart ? (
+                <span>Delete From Cart</span>
+              ) : (
+                <span>Add To Cart</span>
+              )}
             </button>
           </InputWrapper>
         </SingleProductInfoWrap>
       </SingleProductWrap>
       <ProductDesc />
-      {/* <RecomProd /> */}
     </div>
   );
 };

@@ -2,7 +2,7 @@ import RoutserApp from "./Routes/RoutserApp";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <RoutserApp />
     </div>
   );

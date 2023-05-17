@@ -6,15 +6,17 @@ import "./index.css";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./utils/theme";
 import App from "./App";
+import { Provider } from "react-redux";
+import { store } from "./redux";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <ThemeProvider theme={theme}>
       <BrowserRouter basename="">
         <App />
       </BrowserRouter>
       <GlobalStyles />
     </ThemeProvider>
-  </React.StrictMode>
+  </Provider>
 );

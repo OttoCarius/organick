@@ -8,16 +8,31 @@ import {
   Cart,
   NavigateList,
   NavItem,
-  CartLink,
+  CartBtn,
   CartSpan,
   NavLinkTwo,
   BurgerMenu,
+  CartItemsCount,
 } from "./Header.styled";
 import logo from "../../assets/img/Logo.svg";
 import { BsCart3 } from "react-icons/bs";
+import ShoppingCart from "../shopinCart/ShoppingCart";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const [cartVisibilty, setCartVisibilty] = useState(false);
+  // const [quantity, setQuantity] = useState(0);
+
+  const items = useSelector((state) => state.cart.itemsInCart);
+  const calcTotalPrice = items.reduce(
+    (acc, product) => (acc += product.newPrice),
+    0
+  );
+
+  const onClose = () => {
+    setCartVisibilty(false);
+  };
 
   return (
     <HeaderContainer>
@@ -31,7 +46,6 @@ const Header = () => {
           <LogoImg src={logo} alt="Logo" height={54} width={36} /> Organick
         </NavLink>
       </Logo>
-
       <Navigate>
         <NavigateList open={open}>
           <NavLinkTwo to="/">
@@ -61,11 +75,20 @@ const Header = () => {
         </NavigateList>
       </Navigate>
       <Cart>
-        <CartLink>
+        {items.length > 0 ? (
+          <CartItemsCount>{items.length} </CartItemsCount>
+        ) : null}
+        <CartBtn onClick={() => setCartVisibilty(true)}>
           <BsCart3 color="white" size={26} />
-        </CartLink>
-        <CartSpan></CartSpan>
+        </CartBtn>
+        <CartSpan>{calcTotalPrice} $</CartSpan>
       </Cart>
+      <ShoppingCart
+        items={items}
+        visibilty={cartVisibilty}
+        onClose={onClose}
+        calcTotalPrice={calcTotalPrice}
+      />
     </HeaderContainer>
   );
 };

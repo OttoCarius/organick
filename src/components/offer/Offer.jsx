@@ -1,8 +1,5 @@
 import React from "react";
-import { products } from "../../helpers/products";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
-import OfferProduct from "./OfferProduct";
-import { ProductsWrap } from "../../pages/HomePage/HomePage.styled";
 import {
   OfferSection,
   OffersContainer,
@@ -10,6 +7,11 @@ import {
   OfferWrapContainer,
   OfferLink,
 } from "./Offer.styled";
+import { AboutUsBannerContainer } from "../about/aboutUsBanner/aboutUsBanner.styled";
+import spicy from "../../assets/img/about/spicy.png";
+import nutsfeesd from "../../assets/img/about/NutsFeesd.png";
+import fruits from "../../assets/products/banan.png";
+import vegetable from "../../assets/products/broccol.png";
 
 const Offer = () => {
   return (
@@ -26,22 +28,26 @@ const Offer = () => {
             </span>
           </OfferLink>
         </OffersContainer>
-        <ProductsWrap>
-          {products?.slice(10, 14)?.map((product, id) => {
-            return (
-              <OfferProduct
-                key={id}
-                kind={product.kind}
-                img={product.img}
-                title={product.title}
-                oldPrice={product.oldPrice}
-                newPrice={product.newPrice}
-                quality={product.quality}
-                id={id}
-              ></OfferProduct>
-            );
-          })}
-        </ProductsWrap>
+        <AboutUsBannerContainer>
+          <ul>
+            <li>
+              <img src={spicy} alt="spicy" />
+              <p>Spicy</p>
+            </li>
+            <li>
+              <img src={nutsfeesd} alt="nuts&feesd" />
+              <p>Nuts & Feesd</p>
+            </li>
+            <li>
+              <img src={fruits} alt="fruits" />
+              <p>Fruits</p>
+            </li>
+            <li>
+              <img src={vegetable} alt="vegetable" />
+              <p>Vegetable</p>
+            </li>
+          </ul>
+        </AboutUsBannerContainer>
       </OfferWrapContainer>
     </OfferSection>
   );
