@@ -124,7 +124,7 @@ export class CreditCardUi extends React.Component {
             </div>
             <input type="hidden" name="issuer" value={issuer} />
             <div className="form-actions">
-              <ConfirmLink to={"/buy"}>Confirm</ConfirmLink>
+              <ConfirmLink to={"/buy"}>Pay</ConfirmLink>
             </div>
           </Form>
           {formData && (
