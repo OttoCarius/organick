@@ -51,8 +51,8 @@ const SingleShop = () => {
           <h4>{product.title}</h4>
           <img src={product.quality} alt="stars" />
           <SinglePriceWrap>
-            <OldPrice>{product.oldPrice}</OldPrice>
-            <NewPrice>{product.newPrice}</NewPrice>
+            <OldPrice>{product.oldPrice}$</OldPrice>
+            <NewPrice>{product.newPrice}$</NewPrice>
           </SinglePriceWrap>
           <InfoText>
             Simply dummy text of the printing and typesetting industry. Lorem

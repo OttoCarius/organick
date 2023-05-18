@@ -14,7 +14,7 @@ export const ShopCartModal = styled.div`
 `;
 
 export const ShopCart = styled.div`
-  width: 60%;
+  width: 70%;
   height: 80%;
   margin: 30px auto;
   background-color: #eee;
@@ -23,9 +23,10 @@ export const ShopCart = styled.div`
   flex-direction: column;
   position: relative;
   overflow-y: scroll;
+  border-radius: 20px;
 
   @media (max-width: 1410px) {
-    width: 90%;
+    width: 80%;
   }
 
   @media (max-width: 990px) {
@@ -41,8 +42,9 @@ export const ShopCart = styled.div`
 export const CartHeader = styled.div`
   display: flex;
   background-color: #274c5b;
-  padding: 10px 20px;
+  padding: 10px 10px;
   justify-content: space-between;
+  border-radius: 20px;
 
   h2 {
     font-family: ${({ theme }) => theme.fonts.main};
@@ -50,13 +52,26 @@ export const CartHeader = styled.div`
     font-weight: 700;
     line-height: 44px;
     color: #ffffff;
+
+    @media (max-width: 480px) {
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 36px;
+    }
   }
 `;
 
 export const CloseBtn = styled.button`
+  border-radius: 20px;
+  border: none;
+  background-color: #274c5b;
   svg {
-    color: #274c5b;
-    background-color: #fff;
+    color: #ffffff;
+    width: 40px;
+
+    @media (max-width: 480px) {
+      width: 30px;
+    }
   }
 `;
 
@@ -117,11 +132,21 @@ export const TotalPriceWrap = styled.div`
   justify-content: center;
   gap: 25px;
 
+  @media (max-width: 480px) {
+    gap: 15px;
+  }
+
   span {
     font-family: ${({ theme }) => theme.fonts.main};
     font-size: 38px;
     font-weight: 700;
     line-height: 44px;
     color: #274c5b;
+
+    @media (max-width: 480px) {
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 36px;
+    }
   }
 `;

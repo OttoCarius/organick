@@ -26,6 +26,14 @@ export const BuyPageWrap = styled.div`
     font-weight: 800;
     line-height: 68px;
     margin-bottom: 50px;
+    margin-top: 40px;
+    text-align: center;
+
+    @media (max-width: 860px) {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 58px;
+    }
   }
 
   h4 {
@@ -34,5 +42,27 @@ export const BuyPageWrap = styled.div`
     font-size: 50px;
     font-weight: 700;
     line-height: 58px;
+    margin-bottom: 140px;
+    text-align: center;
+
+    @media (max-width: 860px) {
+      font-size: 40px;
+      line-height: 48px;
+    }
+  }
+
+  img {
+    margin-top: -60px;
+    width: 400px;
+
+    @media (max-width: 860px) {
+      margin-top: -10px;
+      width: 300px;
+    }
+
+    @media (max-width: 480px) {
+      margin-top: -10px;
+      width: 270px;
+    }
   }
 `;

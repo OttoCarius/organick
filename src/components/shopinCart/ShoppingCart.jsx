@@ -26,13 +26,16 @@ const ShoppingCart = ({ visibilty, onClose, onClick, calcTotalPrice }) => {
         </CartHeader>
         <ShopCart>
           {items?.length > 0 ? (
-            items?.map((product, id) => (
+            items?.map((product) => (
               <CartItem
-                key={product.id}
+                product={product}
+                key={product.title}
                 img={product.img}
+                kind={product.kind}
                 title={product.title}
+                oldPrice={product.oldPrice}
                 newPrice={product.newPrice}
-                id={id}
+                quality={product.quality}
               ></CartItem>
             ))
           ) : (
@@ -41,7 +44,7 @@ const ShoppingCart = ({ visibilty, onClose, onClick, calcTotalPrice }) => {
         </ShopCart>
         {items?.length > 0 ? (
           <div>
-            <TotalPriceWrap>
+            <TotalPriceWrap calcTotalPrice={calcTotalPrice}>
               <span>Total Price</span>
               <span>{calcTotalPrice} $</span>
             </TotalPriceWrap>

@@ -25,6 +25,10 @@ export const ProductCartWrap = styled.div`
   align-items: center;
   padding-bottom: 5px;
 
+  @media (max-width: 1410px) {
+    gap: 100px;
+  }
+
   @media (max-width: 990px) {
     gap: 50px;
   }
