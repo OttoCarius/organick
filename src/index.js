@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import GlobalStyles from "./utils/GlobalStyled";
 import "./index.css";
 import { ThemeProvider } from "styled-components";
@@ -13,9 +13,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Provider store={store}>
     <ThemeProvider theme={theme}>
-      <BrowserRouter basename="">
+      <HashRouter basename="">
         <App />
-      </BrowserRouter>
+      </HashRouter>
       <GlobalStyles />
     </ThemeProvider>
   </Provider>
