@@ -10,7 +10,6 @@ import research from "../assets/news/research.png";
 import e3 from "../assets/news/f3.jpg";
 import e7 from "../assets/news/f7.jpg";
 import s4 from "../assets/news/s4.jpg";
-import BigLim3 from "../assets/portfolio/l3.jpg";
 
 const tidings = [
   {
