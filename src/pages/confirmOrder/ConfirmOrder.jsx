@@ -12,9 +12,7 @@ const ConfirmOrder = () => {
   return (
     <>
       <ConfirmSection>
-        {/* <h2>Payment Page</h2> */}
         <ConfirmOrderWrap>
-          {/* <img src={shop} alt="shop" /> */}
           <CreditCardUi />
           {/* <span>{totalPriceee} $</span> */}
         </ConfirmOrderWrap>
